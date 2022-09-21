@@ -1,4 +1,4 @@
-using <code>pool.submit(func)</code> runs almost twice as the original script. 
+using <code>pool.submit(func)</code> runs almost twice as fast the original script (using only with() statement). 
 There's more room for improvement if the OS walking is split into different threads as well
 but for now we just assume we want to optimize for concurrent file copying:
 ```
@@ -21,3 +21,5 @@ python3 co.py
 Time to execute script concurrently: 0.005241870880126953
 Time to execute linear script: 0.0076122283935546875
 ```
+
+You can run this script by git cloning it then just using <code>python3 co.py</code>
